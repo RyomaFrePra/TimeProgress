@@ -31,3 +31,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgments
 OpenAI for the assistance in code refactoring and README creation.
+SecurityScanned by Codewhisper
