@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time and Date Progress</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center" id="current-time"></h1>
+    <div class="row mt-4">
+      <div class="col-md-4 text-center chart-container">
+        <h3>Day</h3>
+        <canvas id="hoursChart" width="400" height="400"></canvas>
+        <div>
+          <p class="hours-elapsed"></p>
+          <p class="hours-remaining"></p>
+          <p class="hours-percentage"></p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center chart-container">
+        <h3>Month</h3>
+        <canvas id="daysOfMonthChart" width="400" height="400"></canvas>
+        <div>
+          <p class="days-of-month-elapsed"></p>
+          <p class="days-of-month-remaining"></p>
+          <p class="days-of-month-percentage"></p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center chart-container">
+        <h3>Year</h3>
+        <canvas id="daysOfYearChart" width="400" height="400"></canvas>
+        <div>
+          <p class="days-of-year-elapsed"></p>
+          <p class="days-of-year-remaining"></p>
+          <p class="days-of-year-percentage"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
